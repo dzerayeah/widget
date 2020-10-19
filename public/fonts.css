@@ -3,11 +3,6 @@
     font-weight: 400;
     src:url("./fonts/d07e46ea-8260-4883-bfa3-3a557cb93598.woff2") format("woff2"),url("./fonts/91318483-1660-41d7-be20-a7fedf82ee86.woff") format("woff");
 }
-/* @font-face {
-    font-family: 'TT Commons';
-    font-weight: 500;
-    src:url("./fonts/43babb0e-6086-481c-a47c-bf8d35474219.woff2") format("woff2"),url("./fonts/50605419-ed6b-469a-bd38-50497cc71558.woff") format("woff");
-} */
 @font-face {
     font-family: 'TT Commons';
     font-weight: 500;

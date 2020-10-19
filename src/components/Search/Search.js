@@ -21,7 +21,12 @@ const useStyles = makeStyles((theme) => ({
         height: '30px',
     },
     "& .MuiOutlinedInput-input": {
-        padding: '6px 5px 5px 5px',
+        padding: '5px 23px 5px 10px',
+        '&::placeholder': {
+            fontSize: '16px',
+            lineHeight: '16px',
+            color: '#808DA6',
+        }
     },
     "& .MuiOutlinedInput-notchedOutline": {
         border: 'none',
@@ -35,7 +40,7 @@ const Search = () => {
   return (
     <form className={classes.root} noValidate autoComplete="off">
       <div className="searchWrrapper">
-        <TextField className={classes.search} id="outlined-basic" label="Search" variant="outlined" />
+        <TextField className={classes.search} id="outlined-basic" placeholder="Search" variant="outlined" />
         <div className="search" />
       </div>
     </form>

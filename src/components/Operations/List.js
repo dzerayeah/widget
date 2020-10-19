@@ -98,28 +98,28 @@ const BasicTable = () => {
           {rows1.map((row) => (
             <TableRow className={classes.row} key={row.name}>
               <TableCell className={classNames(classes.cellName, classes.cell)} component="th" scope="row">
-                {row.name == 'Withdraw' && (
+                {row.name === 'Withdraw' && (
                     <div className="icons">
                         <div className="operation-icon"><div className="arrow withdraw" /></div>
                         <span className="operation-name">Withdraw</span>
                         <div className="currency-icons"><div className="icon btc-out" /></div>
                     </div>
                 )}
-                {row.name == 'Deposit' && (
+                {row.name === 'Deposit' && (
                     <div className="icons">
                         <div className="operation-icon"><div className="arrow deposit" /></div>
                         <span className="operation-name">Deposit</span>
                         <div className="currency-icons"><div className="icon btc-in" /></div>
                     </div>
                 )}
-                {row.name == 'Transfer' && (
+                {row.name === 'Transfer' && (
                     <div className="icons">
                         <div className="operation-icon"><div className="arrow transfer" /></div>
                         <span className="operation-name">Transfer</span>
-                        <div className="currency-icons"><div className="icon btc-btc" /></div>
+                        <div className="currency-icons"><div className="icon btc-btc2" /></div>
                     </div>
                 )}
-                {row.name == 'Conversion' && (
+                {row.name === 'Conversion' && (
                     <div className="icons">
                         <div className="operation-icon"><div className="arrow conversion" /></div>
                         <span className="operation-name">Conversion</span>
@@ -130,9 +130,9 @@ const BasicTable = () => {
               <TableCell className={classNames(classes.cellSum, classes.cell)} align="left">{row.sum}</TableCell>
             <TableCell className={classNames(classes.cellBalance, classes.cell)} align="left">{row.balance}&nbsp;<span className={classes.cellCurrency}>{row.currency}</span></TableCell>
               <TableCell className={classes.cell} align="left">
-                {row.state == 'waiting' && <span className="state state-waiting" />}
-                  {row.state == 'confirmed' && <span className="state state-confirmed" />}
-                  {row.state == 'canceled' && <span className="state state-canceled" />}
+                {row.state === 'waiting' && <span className="state state-waiting" />}
+                  {row.state === 'confirmed' && <span className="state state-confirmed" />}
+                  {row.state === 'canceled' && <span className="state state-canceled" />}
             </TableCell>
             </TableRow>
           ))}
@@ -144,28 +144,28 @@ const BasicTable = () => {
           {rows2.map((row) => (
             <TableRow className={classes.row} key={row.name}>
               <TableCell className={classNames(classes.cellName, classes.cell)} component="th" scope="row">
-                {row.name == 'Withdraw' && (
+                {row.name === 'Withdraw' && (
                     <div className="icons">
                         <div className="operation-icon"><div className="arrow withdraw" /></div>
                         <span className="operation-name">Withdraw</span>
                         <div className="currency-icons"><div className="icon btc-out" /></div>
                     </div>
                 )}
-                {row.name == 'Deposit' && (
+                {row.name === 'Deposit' && (
                     <div className="icons">
                         <div className="operation-icon"><div className="arrow deposit" /></div>
                         <span className="operation-name">Deposit</span>
                         <div className="currency-icons"><div className="icon btc-in" /></div>
                     </div>
                 )}
-                {row.name == 'Transfer' && (
+                {row.name === 'Transfer' && (
                     <div className="icons">
                         <div className="operation-icon"><div className="arrow transfer" /></div>
                         <span className="operation-name">Transfer</span>
                         <div className="currency-icons"><div className="icon btc-btc" /></div>
                     </div>
                 )}
-                {row.name == 'Conversion' && (
+                {row.name === 'Conversion' && (
                     <div className="icons">
                         <div className="operation-icon"><div className="arrow conversion" /></div>
                         <span className="operation-name">Conversion</span>
@@ -176,9 +176,9 @@ const BasicTable = () => {
               <TableCell className={classNames(classes.cellSum, classes.cell)} align="left">{row.sum}</TableCell>
             <TableCell className={classNames(classes.cellBalance, classes.cell)} align="left">{row.balance}&nbsp;<span className={classes.cellCurrency}>{row.currency}</span></TableCell>
               <TableCell className={classes.cell} align="left">
-                {row.state == 'waiting' && <span className="state state-waiting" />}
-                  {row.state == 'confirmed' && <span className="state state-confirmed" />}
-                  {row.state == 'canceled' && <span className="state state-canceled" />}
+                {row.state === 'waiting' && <span className="state state-waiting" />}
+                  {row.state === 'confirmed' && <span className="state state-confirmed" />}
+                  {row.state === 'canceled' && <span className="state state-canceled" />}
             </TableCell>
             </TableRow>
           ))}
