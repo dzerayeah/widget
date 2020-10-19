@@ -5,7 +5,7 @@ import './App.scss';
 import Wallet from './components/Wallet/Wallet'
 import Tabs from './components/Tabs/Tabs'
 
-function App() {
+const App = () => {
   return (
     <div className="app">
       <div className="widget-container">

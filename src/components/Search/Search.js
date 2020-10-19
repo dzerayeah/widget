@@ -39,7 +39,7 @@ const Search = () => {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-      <div className="searchWrrapper">
+      <div className="searchWrapper">
         <TextField className={classes.search} id="outlined-basic" placeholder="Search" variant="outlined" />
         <div className="search" />
       </div>
