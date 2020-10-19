@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     },
     "& .MuiOutlinedInput-input": {
       padding: "5px 23px 5px 10px",
+      fontFamily: 'TT Commons',
       "&::placeholder": {
         fontSize: "16px",
         lineHeight: "16px",

@@ -58,6 +58,7 @@ const defaultMaterialTheme = createMuiTheme({
       root: {
         fontSize: "16px!important",
         color: "#011C4D",
+        fontFamily: 'TT Commons!important',
       },
     },
   },
