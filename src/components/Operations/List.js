@@ -78,25 +78,27 @@ function createData(name, sum, balance, currency, state) {
   return { name, sum, balance, currency, state };
 }
 
-const data = [
-  [
+const data = {
+  "04.27.2020": [
     createData("Withdraw", "0,00423 BTC", "0,084643", "BTC", "waiting"),
     createData("Deposit", "0,00423 BTC", "0,084643", "BTC", "confirmed"),
     createData("Transfer", "0,00423 BTC", "0,046431", "BTC", "canceled"),
   ],
-  [createData("Conversion", "0,00423 BTC", "0,064213", "BTC", "confirmed")],
-];
+  "04.26.2020": [
+    createData("Conversion", "0,00423 BTC", "0,064213", "BTC", "confirmed"),
+  ],
+};
 
 const BasicTable = () => {
   const classes = useStyles();
 
   return (
     <TableContainer className={classes.paperContainer} component={Paper}>
-      {data.map((table) => (
-        <Table className={classes.table} aria-label="table">
-          <TableHead className={classes.tableHead}>04.27.2020</TableHead>
+      {Object.entries(data).map(([key, table]) => (
+        <Table className={classes.table} aria-label="table" key={key}>
+          <TableHead className={classes.tableHead}>{key}</TableHead>
           <TableBody>
-            {table.map((row) => (
+            {Object.values(table).map((row) => (
               <TableRow className={classes.row} key={row.name}>
                 <TableCell
                   className={classNames(classes.cellName, classes.cell)}

@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 
 // Components
@@ -26,9 +26,9 @@ const TabPanel = (props) => {
       {...other}
     >
       {value === index && (
-        <Box p={2}>
-          <Typography>{children}</Typography>
-        </Box>
+        <Container>
+          <Box>{children}</Box>
+        </Container>
       )}
     </div>
   );
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   box: {
-    "& .MuiBox-root": {
+    "& .MuiContainer-root": {
       padding: "0 16px 16px 16px",
     },
   },

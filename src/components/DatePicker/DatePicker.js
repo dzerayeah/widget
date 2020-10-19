@@ -63,7 +63,7 @@ const defaultMaterialTheme = createMuiTheme({
   },
 });
 
-const MonthDatePicker = () => {
+const MonthDatePicker = React.forwardRef((props, ref) => {
   const [date, changeDate] = useState(new Date());
 
   return (
@@ -76,10 +76,11 @@ const MonthDatePicker = () => {
           openTo="date"
           value={date}
           onChange={changeDate}
+          ref={ref}
         />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
   );
-};
+});
 
 export default MonthDatePicker;
