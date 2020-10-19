@@ -26,6 +26,8 @@ const useStyles = makeStyles({
     opacity: "0.5",
     borderBottom: "1px solid #E6E9EE",
     fontFamily: "TT Commons",
+    fontWeight: "400",
+    padding: "0",
   },
   row: {
     position: "relative",
@@ -95,8 +97,14 @@ const BasicTable = () => {
   return (
     <TableContainer className={classes.paperContainer} component={Paper}>
       {Object.entries(data).map(([key, table]) => (
-        <Table className={classes.table} aria-label="table" key={key}>
-          <TableHead className={classes.tableHead}>{key}</TableHead>
+        <Table className={classes.table} aria-label="table" key={table}>
+          <TableHead>
+            <TableRow>
+              <TableCell align="left" colSpan={4} className={classes.tableHead}>
+                {key}
+              </TableCell>
+            </TableRow>
+          </TableHead>
           <TableBody>
             {Object.values(table).map((row) => (
               <TableRow className={classes.row} key={row.name}>
