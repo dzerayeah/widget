@@ -1,83 +1,83 @@
 .state {
-    width: 16px;
-    height: 16px;
-    display: block;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    &-waiting {
-        background-image: url('/icons/stateWaiting.svg');
-    }
-    &-confirmed {
-        background-image: url('/icons/stateConfirmed.svg');
-    }
-    &-canceled {
-        background-image: url('/icons/stateCanceled.svg');
-    }
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &-waiting {
+    background-image: url("/icons/stateWaiting.svg");
+  }
+  &-confirmed {
+    background-image: url("/icons/stateConfirmed.svg");
+  }
+  &-canceled {
+    background-image: url("/icons/stateCanceled.svg");
+  }
 }
 .icons {
-    position: relative;
-    width: 187px;
-    .operation-icon {
-        width: 30px;
-        height: 30px;
-        left: 0;
-        top: -8px;
-        position: absolute;
-        .arrow {
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            display: block;
-            width: 30px;
-            height: 30px;
-            &.withdraw {
-                background-image: url('/icons/withdraw.svg');
-            }
-            &.deposit {
-                background-image: url('/icons/withdraw.svg');
-                transform: rotate(180deg);
-            }
-            &.transfer {
-                background-image: url('/icons/transfer.svg');
-            }
-            &.conversion {
-                background-image: url('/icons/conversion.svg');
-            }
-        }
+  position: relative;
+  width: 187px;
+  .operation-icon {
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -8px;
+    position: absolute;
+    .arrow {
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+      width: 30px;
+      height: 30px;
+      &.withdraw {
+        background-image: url("/icons/withdraw.svg");
+      }
+      &.deposit {
+        background-image: url("/icons/withdraw.svg");
+        transform: rotate(180deg);
+      }
+      &.transfer {
+        background-image: url("/icons/transfer.svg");
+      }
+      &.conversion {
+        background-image: url("/icons/conversion.svg");
+      }
     }
-    .operation-name {
-        padding-left: 38px;
+  }
+  .operation-name {
+    padding-left: 38px;
+  }
+  .currency-icons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+    .icon {
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+      width: 30px;
+      height: 16px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      &.btc-in {
+        background-image: url("/icons/btc-in.svg");
+      }
+      &.btc-out {
+        background-image: url("/icons/btc-out.svg");
+      }
+      &.btc–btc {
+        background-image: url("/icons/btc–btc.svg");
+      }
+      &.btc-usd {
+        background-image: url("/icons/btc-usd.svg");
+      }
     }
-    .currency-icons {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        right: 0;
-        top: 0;
-        .icon {
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            display: block;
-            width: 30px;
-            height: 16px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            &.btc-in {
-                background-image: url('/icons/btc-in.svg');
-            }
-            &.btc-out {
-                background-image: url('/icons/btc-out.svg');
-            }
-            &.btc–btc {
-                background-image: url('/icons/btc–btc.svg');
-            }
-            &.btc-usd {
-                background-image: url('/icons/btc-usd.svg');
-            }
-        }
-    }
+  }
 }

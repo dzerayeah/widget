@@ -1,9 +1,9 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
 
 // Components
-import Wallet from './components/Wallet/Wallet'
-import Tabs from './components/Tabs/Tabs'
+import Wallet from "./components/Wallet/Wallet";
+import Tabs from "./components/Tabs/Tabs";
 
 const App = () => {
   return (
@@ -30,6 +30,6 @@ const App = () => {
       </div>
     </div>
   );
-}
+};
 
 export default App;

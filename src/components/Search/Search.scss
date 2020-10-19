@@ -1,17 +1,17 @@
 .searchWrapper {
-    position: relative;
-    width: 260px;
-    .search {
-        background-image: url('/icons/search.svg');
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: block;
-        width: 15px;
-        height: 15px;
-        position: absolute;
-        top: 7px;
-        right: 5px;
-        cursor: pointer;
-    }
+  position: relative;
+  width: 260px;
+  .search {
+    background-image: url("/icons/search.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    cursor: pointer;
+  }
 }

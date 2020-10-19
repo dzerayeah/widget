@@ -1,37 +1,37 @@
 .control-wrapper {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  .control {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #011c4d;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-left: 10px;
+    position: relative;
     display: flex;
-    .control {
-        width: 40px;
-        height: 40px;
-        border: 2px solid #011C4D;
-        box-sizing: border-box;
-        border-radius: 25px;
-        margin-left: 10px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        .arrow {
-            background-image: url('/icons/arrowTop.svg');
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 12px;
-            position: absolute;
-            &.bottom {
-                transform: rotate(180deg);
-                left: 8px;
-                top: 14px;
-            }
-            &.top {
-                left: 8px;
-                bottom: 13px;
-            }
-        }
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .arrow {
+      background-image: url("/icons/arrowTop.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 12px;
+      position: absolute;
+      &.bottom {
+        transform: rotate(180deg);
+        left: 8px;
+        top: 14px;
+      }
+      &.top {
+        left: 8px;
+        bottom: 13px;
+      }
     }
+  }
 }
