@@ -1,0 +1,7 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3">
+<rect x="99" y="1" width="98" height="98" rx="25" transform="rotate(90 99 1)" stroke="#680000" stroke-width="2"/>
+<path d="M66 27.5L43.5 50L66 72.5" stroke="#680000" stroke-width="2"/>
+<path d="M49.5 27.5L27 50L49.5 72.5" stroke="#680000" stroke-width="2"/>
+</g>
+</svg>

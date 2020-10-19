@@ -1,24 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+// Components
+import Wallet from './components/Wallet/Wallet'
+import Tabs from './components/Tabs/Tabs'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="widget-container">
+        <div className="widget">
+          <div className="drag" />
+          <Wallet />
+          <Tabs />
+        </div>
+        <div className="additional-info">
+          <div className="arrow-left" />
+          <div className="arrows-left" />
+          <div className="heading">
+            Return Your Fees for&nbsp;invited friends
+          </div>
+          <div className="desc">
+            Return Your Fees for invited friendsfor invited friends
+          </div>
+          <a href="/" className="recommend">
+            Let’s recommend
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
