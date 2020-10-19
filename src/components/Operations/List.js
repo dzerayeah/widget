@@ -17,15 +17,15 @@ const useStyles = makeStyles({
     },
     table: {
         minWidth: 'unset',
-        marginTop: '8px',
+        marginTop: '10px',
     },
     tableHead: {
         fontSize: '16px',
-        lineHeight: '30px',
+        lineHeight: '29px',
         color: '#011C4D',
         opacity: '0.5',
         borderBottom: '1px solid #E6E9EE',
-        letterSpacing: '-1.2px',
+        fontFamily: 'TT Commons',
     },
     row: {
         position: 'relative',
@@ -44,6 +44,7 @@ const useStyles = makeStyles({
         padding: '13px 0 5px 0',
         borderBottom: 'none',
         position: 'relative',
+        fontFamily: 'TT Commons',
     },
     cellName: {
         fontSize: '20px',
@@ -63,7 +64,6 @@ const useStyles = makeStyles({
         fontSize: '20px',
         lineHeight: '20px',
         color: '#011C4D',
-        letterSpacing: '-1px',
     },
     cellCurrency: {
         fontSize: '14px',
